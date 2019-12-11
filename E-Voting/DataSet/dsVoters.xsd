@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsVoters" targetNamespace="http://tempuri.org/dsVoters.xsd" xmlns:mstns="http://tempuri.org/dsVoters.xsd" xmlns="http://tempuri.org/dsVoters.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="EvotingDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EvotingDbConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.E_Voting.My.MySettings.GlobalReference.Default.EvotingDbConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Setting" IsAppSettingsProperty="true" Modifier="Assembly" Name="Setting (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.E_Voting.My.MySettings.GlobalReference.Default.Setting" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsVoters" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsVoters" msprop:Generator_UserDSName="dsVoters">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsVoters" msprop:Generator_TableClassName="dsVotersDataTable" msprop:Generator_TableVarName="tabledsVoters" msprop:Generator_TablePropName="_dsVoters" msprop:Generator_RowDeletingName="dsVotersRowDeleting" msprop:Generator_RowChangingName="dsVotersRowChanging" msprop:Generator_RowEvHandlerName="dsVotersRowChangeEventHandler" msprop:Generator_RowDeletedName="dsVotersRowDeleted" msprop:Generator_UserTableName="dsVoters" msprop:Generator_RowChangedName="dsVotersRowChanged" msprop:Generator_RowEvArgName="dsVotersRowChangeEvent" msprop:Generator_RowClassName="dsVotersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherName" msprop:Generator_ColumnVarNameInTable="columnOtherName" msprop:Generator_ColumnPropNameInRow="OtherName" msprop:Generator_ColumnPropNameInTable="OtherNameColumn" msprop:Generator_UserColumnName="OtherName" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="VoterID" msprop:Generator_ColumnVarNameInTable="columnVoterID" msprop:Generator_ColumnPropNameInRow="VoterID" msprop:Generator_ColumnPropNameInTable="VoterIDColumn" msprop:Generator_UserColumnName="VoterID" type="xs:string" minOccurs="0" />
+              <xs:element name="PinNumber" msprop:Generator_ColumnVarNameInTable="columnPinNumber" msprop:Generator_ColumnPropNameInRow="PinNumber" msprop:Generator_ColumnPropNameInTable="PinNumberColumn" msprop:Generator_UserColumnName="PinNumber" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

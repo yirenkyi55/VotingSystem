@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsVoterLogs" targetNamespace="http://tempuri.org/dsVoterLogs.xsd" xmlns:mstns="http://tempuri.org/dsVoterLogs.xsd" xmlns="http://tempuri.org/dsVoterLogs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsVoterLogs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsVoterLogs" msprop:Generator_UserDSName="dsVoterLogs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblVoterLogs" msprop:Generator_TableClassName="tblVoterLogsDataTable" msprop:Generator_TableVarName="tabletblVoterLogs" msprop:Generator_TablePropName="tblVoterLogs" msprop:Generator_RowDeletingName="tblVoterLogsRowDeleting" msprop:Generator_RowChangingName="tblVoterLogsRowChanging" msprop:Generator_RowEvHandlerName="tblVoterLogsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblVoterLogsRowDeleted" msprop:Generator_UserTableName="tblVoterLogs" msprop:Generator_RowChangedName="tblVoterLogsRowChanged" msprop:Generator_RowEvArgName="tblVoterLogsRowChangeEvent" msprop:Generator_RowClassName="tblVoterLogsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherName" msprop:Generator_ColumnVarNameInTable="columnOtherName" msprop:Generator_ColumnPropNameInRow="OtherName" msprop:Generator_ColumnPropNameInTable="OtherNameColumn" msprop:Generator_UserColumnName="OtherName" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="VoterID" msprop:Generator_ColumnVarNameInTable="columnVoterID" msprop:Generator_ColumnPropNameInRow="VoterID" msprop:Generator_ColumnPropNameInTable="VoterIDColumn" msprop:Generator_UserColumnName="VoterID" type="xs:string" minOccurs="0" />
+              <xs:element name="VoteTime" msprop:Generator_ColumnVarNameInTable="columnVoteTime" msprop:Generator_ColumnPropNameInRow="VoteTime" msprop:Generator_ColumnPropNameInTable="VoteTimeColumn" msprop:Generator_UserColumnName="VoteTime" type="xs:string" minOccurs="0" />
+              <xs:element name="Success" msprop:Generator_ColumnVarNameInTable="columnSuccess" msprop:Generator_ColumnPropNameInRow="Success" msprop:Generator_ColumnPropNameInTable="SuccessColumn" msprop:Generator_UserColumnName="Success" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

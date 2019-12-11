@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C74A3B2-F12C-4DCD-8C01-5AADCC37B799}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>E_Voting.My.MyApplication</StartupObject>
+    <RootNamespace>E_Voting</RootNamespace>
+    <AssemblyName>E-Voting</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>C:\Users\FuncTionZ\Desktop\prerequisite</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>E-Voting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>E-Voting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>00052FD33130F0E253549B3E0673AFE5CCE399BE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>E-Voting_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Burn Folder Black.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=12.9.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.9.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.9.0.0, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="Sms, Version=2.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sms.2.5.6.0\lib\net45\Sms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WhatsAppApi, Version=1.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Whatsapp.NET.1.2.2\lib\WhatsAppApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSettings.vb" />
+    <Compile Include="DataSet\dsDetailsResult.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDetailsResult.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsVoterLogs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVoterLogs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsVoters.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVoters.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminGet.Designer.vb">
+      <DependentUpon>frmAdminGet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminGet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackupRestore.Designer.vb">
+      <DependentUpon>frmBackupRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackupRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCode.Designer.vb">
+      <DependentUpon>frmCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConn.Designer.vb">
+      <DependentUpon>frmConn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.vb">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInterface.Designer.vb">
+      <DependentUpon>frmInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintDetailsResults.Designer.vb">
+      <DependentUpon>frmPrintDetailsResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintDetailsResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintResultsCan.Designer.vb">
+      <DependentUpon>frmPrintResultsCan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintResultsCan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintVoterLogs.Designer.vb">
+      <DependentUpon>frmPrintVoterLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintVoterLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintVoters.Designer.vb">
+      <DependentUpon>frmPrintVoters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintVoters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterCanGet.Designer.vb">
+      <DependentUpon>frmRegisterCanGet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisterCanGet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResetSystem.Designer.vb">
+      <DependentUpon>frmResetSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResetSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResults.Designer.vb">
+      <DependentUpon>frmResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultsGet.Designer.vb">
+      <DependentUpon>frmResultsGet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultsGet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowVoterLogs.Designer.vb">
+      <DependentUpon>frmShowVoterLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowVoterLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThanks.Designer.vb">
+      <DependentUpon>frmThanks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThanks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVote.Designer.vb">
+      <DependentUpon>frmVote.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminLogin.Designer.vb">
+      <DependentUpon>frmAdminLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateAdmin.Designer.vb">
+      <DependentUpon>frmCreateAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateVoters.Designer.vb">
+      <DependentUpon>frmCreateVoters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateVoters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.Designer.vb">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterCan.Designer.vb">
+      <DependentUpon>frmRegisterCan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisterCan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterPosition.Designer.vb">
+      <DependentUpon>frmRegisterPosition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisterPosition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoterLogin.Designer.vb">
+      <DependentUpon>frmVoterLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoterLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVotersGet.Designer.vb">
+      <DependentUpon>frmVotersGet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVotersGet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWait.Designer.vb">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetData.vb" />
+    <Compile Include="ModVote.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\crptVoterLogs.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptVoterLogs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crptVoters.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptVoters.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cryptCandidateInfo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cryptCandidateInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cryptDetailsResults.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cryptDetailsResults.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportInformation.vb" />
+    <Compile Include="sqlHelper.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminGet.resx">
+      <DependentUpon>frmAdminGet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackupRestore.resx">
+      <DependentUpon>frmBackupRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCode.resx">
+      <DependentUpon>frmCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConn.resx">
+      <DependentUpon>frmConn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInterface.resx">
+      <DependentUpon>frmInterface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintDetailsResults.resx">
+      <DependentUpon>frmPrintDetailsResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintResultsCan.resx">
+      <DependentUpon>frmPrintResultsCan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintVoterLogs.resx">
+      <DependentUpon>frmPrintVoterLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintVoters.resx">
+      <DependentUpon>frmPrintVoters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterCanGet.resx">
+      <DependentUpon>frmRegisterCanGet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResetSystem.resx">
+      <DependentUpon>frmResetSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResults.resx">
+      <DependentUpon>frmResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultsGet.resx">
+      <DependentUpon>frmResultsGet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowVoterLogs.resx">
+      <DependentUpon>frmShowVoterLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThanks.resx">
+      <DependentUpon>frmThanks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVote.resx">
+      <DependentUpon>frmVote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminLogin.resx">
+      <DependentUpon>frmAdminLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateAdmin.resx">
+      <DependentUpon>frmCreateAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateVoters.resx">
+      <DependentUpon>frmCreateVoters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterCan.resx">
+      <DependentUpon>frmRegisterCan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterPosition.resx">
+      <DependentUpon>frmRegisterPosition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoterLogin.resx">
+      <DependentUpon>frmVoterLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVotersGet.resx">
+      <DependentUpon>frmVotersGet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWait.resx">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crptVoterLogs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptVoterLogs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crptVoters.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptVoters.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cryptCandidateInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cryptCandidateInfo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cryptDetailsResults.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cryptDetailsResults.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet\dsDetailsResult.xsc">
+      <DependentUpon>dsDetailsResult.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsDetailsResult.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDetailsResult.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsDetailsResult.xss">
+      <DependentUpon>dsDetailsResult.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsVoterLogs.xsc">
+      <DependentUpon>dsVoterLogs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsVoterLogs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVoterLogs.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsVoterLogs.xss">
+      <DependentUpon>dsVoterLogs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsVoters.xsc">
+      <DependentUpon>dsVoters.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsVoters.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVoters.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsVoters.xss">
+      <DependentUpon>dsVoters.xsd</DependentUpon>
+    </None>
+    <None Include="E-Voting_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\DropBoxFolder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropBox-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emac-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File-Adobe-Flash-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-flower-beige-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Open-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forklift-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift-boxes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grab-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduated-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grapher-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grapher-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guard-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headphone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caucasian-Female-Boss-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contacts-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grapher-1-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Themis-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyChainAccess-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MissionControl-ico1n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Burn Folder Black.ico" />
+    <None Include="Resources\share.png" />
+    <None Include="Resources\whatsapp.png" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\gear.png" />
+    <None Include="Resources\phone.png" />
+    <None Include="Resources\database1.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\speech.jpg" />
+    <None Include="Resources\user3.png" />
+    <None Include="Resources\Numbers-icon1.png" />
+    <None Include="Resources\voting1.jpg" />
+    <None Include="Resources\cursor2.png" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\cursor1.jpg" />
+    <None Include="Resources\startVote11.jpg" />
+    <None Include="Resources\chart.png" />
+    <None Include="Resources\bars-chart.png" />
+    <None Include="Resources\guard-icon1.png" />
+    <None Include="Resources\Supervisor-icon1.png" />
+    <None Include="Resources\vote.jpg" />
+    <None Include="Resources\voters1.gif" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\boss11.png" />
+    <None Include="Resources\businessman-1.png" />
+    <None Include="Resources\chart-5.png" />
+    <None Include="Resources\settings-2.png" />
+    <None Include="Resources\voting.jpg" />
+    <None Include="Resources\startVote1.jpg" />
+    <None Include="Resources\startVote.jpg" />
+    <None Include="Resources\vote1.jpg" />
+    <None Include="Resources\voters.gif" />
+    <None Include="Resources\006-support.png" />
+    <None Include="Resources\boss1.png" />
+    <None Include="Resources\boss.png" />
+    <None Include="Resources\Caucasian-Female-Boss-icon11.png" />
+    <None Include="Resources\key4.jpg" />
+    <None Include="Resources\picture015.jpg" />
+    <None Include="Resources\Supervisor-icon.png" />
+    <None Include="Resources\Mousecape-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
